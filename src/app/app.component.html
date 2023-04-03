@@ -37,7 +37,11 @@
     </nav>
   </div>
   <div class="row mt-2">
-    <div class="col-3">Menu</div>
+    <div class="col-3">
+      <p *ngFor="let item of sideBarMenu">
+        <a routerLink="{{ item.path }}">{{ item.text }}</a>
+      </p>
+    </div>
     <div class="col-9">
       <router-outlet></router-outlet>
     </div>
