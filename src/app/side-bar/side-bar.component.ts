@@ -8,4 +8,9 @@ import { SideBar } from '../app.interfaces';
 })
 export class SideBarComponent {
   @Input() menu: SideBar[] = [];
+  @Input() active = 'greeting';
+
+  onClick(path: string) {
+    this.active = path;
+  }
 }
