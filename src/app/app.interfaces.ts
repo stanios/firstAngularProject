@@ -9,3 +9,9 @@ export interface Joke {
   url: string;
   value: string;
 }
+
+export interface User {
+  firstName: string;
+  lastName: string;
+  age: number;
+}
