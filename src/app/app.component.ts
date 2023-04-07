@@ -19,9 +19,9 @@ export class AppComponent {
     { text: 'Template Variables', path: 'template-variables' },
     { text: 'Component Input', path: 'component-input' },
     { text: 'Component Input Output', path: 'component-input-output' },
-    { text: 'Template Forms', path: 'template-forms' },
-    { text: 'Reactive Forms', path: 'reactive-forms' },
-    { text: 'Chuck Norris Joke', path: 'chuck-norris-joke' },
+    // { text: 'Template Forms', path: 'template-forms' },
+    // { text: 'Reactive Forms', path: 'reactive-forms' },
+    // { text: 'Chuck Norris Joke', path: 'chuck-norris-joke' },
   ];
 
   currentPath = '';
