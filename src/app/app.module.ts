@@ -18,6 +18,7 @@ import { SimpleTable1Component } from './component-input-output/simple-table1/si
 import { WelcomeComponent } from './welcome/welcome.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
+import { ChuckNorrisComponent } from './chuck-norris/chuck-norris.component';
 
 
 const routes: Routes = [
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'template-variables', component: TemplateVariablesComponent },
   { path: 'component-input', component: ComponentInputComponent },
   { path: 'component-input-output', component: ComponentInputOutputComponent },
+  { path: 'chuck-norris-joke', component: ChuckNorrisComponent },
   { path: '', component: WelcomeComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
@@ -48,14 +50,15 @@ const routes: Routes = [
     SimpleTable1Component,
     WelcomeComponent,
     PageNotFoundComponent,
-    SideBarComponent
+    SideBarComponent,
+    ChuckNorrisComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     // ReactiveFormsModule,
     RouterModule.forRoot(routes),
-    // HttpClientModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
