@@ -1,6 +1,6 @@
 <div class="list-group">
     <a
-    (click) = "onClick(item.path)" 
+    (click)="onClick(item.path)" 
     *ngFor="let item of menu" 
     routerLink={{item.path}}
     [ngClass]="{active: active === item.path}"

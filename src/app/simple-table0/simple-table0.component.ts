@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { User } from '../component-input.component';
-//to kanoume to interface inport apo tin parent klasi tou
+import { User } from '../app.interfaces';
+//to kanoume to interface inport app.interfaces.ts
 
 @Component({
   selector: 'app-simple-table0',

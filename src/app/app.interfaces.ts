@@ -11,7 +11,7 @@ export interface Joke {
 }
 
 export interface User {
-  firstName: string;
-  lastName: string;
+  firstname: string;
+  lastname: string;
   age: number;
 }
